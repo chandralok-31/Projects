@@ -1,0 +1,62 @@
+The commands that we used in this project :
+
+head() - It shows the first N rows in the data (by default, N=5).
+shape - It shows the total no. of rows and no. of columns of the dataframe
+index - This attribute provides the index of the dataframe
+columns - It shows the name of each column
+dtypes - It shows the data-type of each column
+unique() - In a column, it shows all the unique values. It can be applied on a single column only, not on the whole dataframe.
+nunique() - It shows the total no. of unique values in each column. It can be applied on a single column as well as on the whole dataframe.
+count - It shows the total no. of non-null values in each column. It can be applied on a single column as well as on the whole dataframe.
+value_counts - In a column, it shows all the unique values with their count. It can be applied on a single column only.
+info() - Provides basic information about the dataframe.
+
+
+
+
+
+The commands that we used in this project :
+
+import pandas as pd -- To import Pandas library
+pd.read_csv - To import the CSV file in Jupyter notebook
+head() - It shows the first N rows in the data (by default, N=5)
+shape - It shows the total no. of rows and no. of columns of the dataframe
+df.isnull( ).sum( ) - It detects the missing values from each column of the dataframe.
+fillna() - To fill the null values of a column with some particular value
+value_counts - In a column, it shows all the unique values with their count. It can be applied to a single column only.
+isin() - To show all records including particular elements
+apply() - To apply a function along any axis of DF
+
+
+
+
+The commands that we used in this project :
+
+import pandas as pd -- To import Pandas library
+pd.read_csv - To import the CSV file in Jupyter notebook
+head() - It shows the first N rows in the data (by default, N=5)
+df.isnull( ).sum( ) - It detects the missing values from each column of the dataframe.
+df.drop(‘Col_name’ ) - To drop a column from dataframe.
+value_counts - In a column, it shows all the unique values with their count. It can be applied on a single column only.
+df.groupby(‘Col_1’)[‘Col_2’] .sum( ) - To create groups - Two Keys – Apply on Col_2 grouped by Col_1.
+df['Column_name'].map( { old1:new1 , old2:new2} ) – Change the all values of a column from old to new. We have to write for all values of column otherwise Nan will appear.
+df['Column_name'].mean() - To show Mean value of a column.
+df.groupby('Column_1').Column_2.describe() - To create groups based on Column1 and show statistics summary based on Column2.
+
+
+
+
+
+The commands that we used in this project :
+
+import pandas as pd -- To import Pandas library
+pd.read_csv - To import the CSV file in Jupyter notebook
+df.count() - It counts the no. of non-null values of each column.
+df.isnull().sum() - It detects the missing values from the dataframe.
+import seaborn as sns - To import the Seaborn library.
+import matplotlib.pyplot as plt - To import the Matplotlib library.
+sns.heatmap(df.isnull()) - It will show the all columns & missing values in them in heat map form.
+plt.show() - To show the plot.
+df.groupby(‘Col_name’) - To form groups of all unique values of the column.
+df.sort_values(by= ['Col_name'] ) - Sort the entire dataframe by the values of the given column.
+df[df.Col_1 = = ‘Element1’] - Filtering – We are accessing all records with Element1 only of Col_1.
